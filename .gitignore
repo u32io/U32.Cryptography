@@ -56,3 +56,5 @@ dkms.conf
 # other
 .idea/
 *.DotSettings.user
+U32.Cryptography/README.md
+U32.Cryptography/icon.png

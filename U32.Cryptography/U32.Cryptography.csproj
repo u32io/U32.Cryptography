@@ -4,13 +4,36 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <Title>U32 Cryptography</Title>
         <Company>U32</Company>
-        <Version>0.0.1</Version>
-        <AnalysisModeSecurity/>
+        <Version>0.0.2</Version>
+        <PackageVersion>0.0.2</PackageVersion>
+        <PackageId>U32.Cryptography</PackageId>
+        <Authors>U32</Authors>
+        <Description>Cryptographic functions and types simplified and tailed for ease-of-use in applications</Description>
+        <PackageProjectUrl>https://github.com/u32io/U32.Cryptography</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <RepositoryUrl>https://github.com/u32io/U32.Cryptography</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>cryptography argon2 hash password</PackageTags>
+        <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+        <PackageIconUrl>icon.png</PackageIconUrl>
     </PropertyGroup>
-
+    
+    <ItemGroup>
+        <None Include="../README.md">
+            <Pack>true</Pack>
+            <PackagePath>/</PackagePath>
+        </None>
+        <None Include="../icon.png">
+            <Pack>true</Pack>
+            <PackagePath>/</PackagePath>
+        </None>
+    </ItemGroup>
+    
     <ItemGroup>
       <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.3.1" />
     </ItemGroup>
-
 </Project>
